@@ -1,7 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 
 const MainSection = () => {
+  const [imageLoaded, setImageLoaded] = useState(false);
+
+  const handleImageLoaded = () => {
+    setImageLoaded(true);
+  };
+
   return (
     <motion.section
       className="bg-slate-50 text-center p-10"
@@ -17,6 +23,7 @@ const MainSection = () => {
         whileHover={{ scale: 1.07 }}
         alt="Product Image"
         className="mx-auto"
+        onLoad={handleImageLoaded}
       />
 
       {/* Animated Heading */}
