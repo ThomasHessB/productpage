@@ -1,7 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 
 const FeatureCard = ({ imageSrc, title, description }) => {
+  const [imageLoaded, setImageLoaded] = useState(false);
+
+  const handleImageLoaded = () => {
+    setImageLoaded(true);
+  };
+
   const cardVariants = {
     hover: { scale: 1.05 },
     tap: { scale: 0.95 },
@@ -21,6 +27,7 @@ const FeatureCard = ({ imageSrc, title, description }) => {
         initial={{ scale: 0.7 }}
         animate={{ scale: 1 }}
         transition={{ duration: 1.0 }}
+        onLoad={handleImageLoaded}
       />
       <motion.h3 className="text-lg font-semibold mt-2">{title}</motion.h3>
       <motion.p className="text-sm text-gray-600">{description}</motion.p>

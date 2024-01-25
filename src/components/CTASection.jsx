@@ -1,8 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { FaWhatsapp, FaInstagram } from "react-icons/fa";
 
 const CTASection = () => {
+  const [imageLoaded, setImageLoaded] = useState(false);
+
+  const handleImageLoaded = () => {
+    setImageLoaded(true);
+  };
+
   const bgAnimation = {
     initial: { scale: 1.2, opacity: 0 },
     animate: { scale: 1, opacity: 1 },
@@ -20,6 +26,7 @@ const CTASection = () => {
         whileHover={{ scale: 1.05 }}
         className="absolute top-0 left-0 w-full h-full object-cover z-0"
         alt="Background"
+        onLoad={handleImageLoaded}
       />
 
       {/* Content Container */}
