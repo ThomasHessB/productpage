@@ -23,7 +23,7 @@ const MainSection = () => {
         whileHover={{ scale: 1.07 }}
         whileTap={{ scale: 0.9 }}
         alt="Product Image"
-        className="mx-auto"
+        className="mx-auto w=1024px"
         onLoad={handleImageLoaded}
       />
 

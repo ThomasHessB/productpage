@@ -10,8 +10,8 @@ const Footer = () => {
       <aside>
         <motion.img
           className="size-16"
-          src="https://i.imgur.com/ss4ba1B.png"
-          whileHover={{ scale: 1.23, transition: { duration: 0.3 } }}
+          src="public/thomas-logo.svg"
+          whileHover={{ scale: 1.13, transition: { duration: 0.3 } }}
           whileTap={{ scale: 0.9 }}
         />
         <p className="font-bold">

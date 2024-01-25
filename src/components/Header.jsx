@@ -13,7 +13,7 @@ const Header = () => {
     >
       <div className="flex logo text-xl">
         {/* Brand Logo or Name */}
-        <img className="size-12" src="https://i.imgur.com/ss4ba1B.png" />
+        <img className="size-12" src="public/thomas-logo.svg" />
         <p className="font-sans self-center pl-2">Your Product</p>
       </div>
       <nav className="hidden md:block">

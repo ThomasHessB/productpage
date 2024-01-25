@@ -23,7 +23,7 @@ const CTASection = () => {
         initial={bgAnimation.initial}
         animate={bgAnimation.animate}
         transition={bgAnimation.transition}
-        whileHover={{ scale: 1.05 }}
+        whileHover={{ scale: 1.01 }}
         whileTap={{ scale: 0.9 }}
         className="absolute top-0 left-0 w-full h-full object-cover z-0"
         alt="Background"
