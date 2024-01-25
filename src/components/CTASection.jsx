@@ -48,22 +48,29 @@ const CTASection = () => {
         >
           Join us now and transform your experience!
         </motion.p>
-        <motion.button
-          whileHover={{ scale: 1.1 }}
-          whileTap={{ scale: 0.9 }}
-          className="mt-5 py-2 px-4 rounded"
-        >
+        <nav className="hidden md:block">
+          {/* Desktop Navigation Links */}
           <a href="https://wa.me/5547996235145">
-            <i className="btn bg-green-600 w-12 h-12">
+            <motion.i
+              className="btn bg-green-600 w-12 h-12"
+              whileHover={{ scale: 0.9, transition: { duration: 0.3 } }}
+              transition={{ type: "spring", stiffness: 400, damping: 10 }}
+              whileTap={{ scale: 1.05 }}
+            >
               <FaWhatsapp />
-            </i>
+            </motion.i>
           </a>
           <a href="https://www.instagram.com/thomasalemao.wav/">
-            <i className="btn bg-pink-500 w-12 h-12">
+            <motion.i
+              className="btn bg-pink-500 w-12 h-12"
+              whileHover={{ scale: 0.9, transition: { duration: 0.3 } }}
+              transition={{ type: "spring", stiffness: 400, damping: 10 }}
+              whileTap={{ scale: 1.05 }}
+            >
               <FaInstagram />
-            </i>
+            </motion.i>
           </a>
-        </motion.button>
+        </nav>
       </div>
     </div>
   );
