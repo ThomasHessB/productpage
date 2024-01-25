@@ -6,12 +6,14 @@ const TestimonialCard = ({ avatar, testimonial, name }) => {
     <motion.div
       className="bg-slate-50 p-4 rounded-lg shadow-md"
       whileHover={{ scale: 1.03, transition: { duration: 0.3 } }}
+      whileTap={{ scale: 0.9 }}
     >
       <motion.img
         src={avatar}
         className="w-16 h-16 rounded-full mx-auto"
         alt={name}
         whileHover={{ scale: 1.5 }}
+        whileTap={{ scale: 0.9 }}
         initial={{ scale: 0.7 }}
         animate={{ scale: 1 }}
         transition={{ duration: 0.5 }}

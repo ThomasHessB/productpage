@@ -21,6 +21,7 @@ const MainSection = () => {
         animate={{ scale: 1 }}
         transition={{ duration: 1.0 }}
         whileHover={{ scale: 1.07 }}
+        whileTap={{ scale: 0.9 }}
         alt="Product Image"
         className="mx-auto"
         onLoad={handleImageLoaded}
