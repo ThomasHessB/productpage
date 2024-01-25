@@ -26,7 +26,7 @@ const Header = () => {
           transition={{ type: "spring", stiffness: 400, damping: 10 }}
           whileTap={{ scale: 1.05 }}
         >
-          Your Product
+          Thomas Hess B.
         </motion.p>
       </div>
       <nav className="hidden md:block">

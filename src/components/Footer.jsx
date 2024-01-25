@@ -15,11 +15,22 @@ const Footer = () => {
           transition={{ type: "spring", stiffness: 400, damping: 10 }}
           whileTap={{ scale: 0.9 }}
         />
-        <p className="font-bold">
+        <motion.p
+          className="font-bold"
+          whileHover={{ scale: 1.13, transition: { duration: 0.3 } }}
+          transition={{ type: "spring", stiffness: 400, damping: 10 }}
+          whileTap={{ scale: 0.9 }}
+        >
           Thomas Hess Bernhardt <br />
           Web Developer since 2023
-        </p>
-        <p>Copyright © 2024 - All right reserved</p>
+        </motion.p>
+        <motion.p
+          whileHover={{ scale: 1.13, transition: { duration: 0.3 } }}
+          transition={{ type: "spring", stiffness: 400, damping: 10 }}
+          whileTap={{ scale: 0.9 }}
+        >
+          Copyright © 2024 - All right reserved
+        </motion.p>
       </aside>
     </motion.footer>
   );
