@@ -31,6 +31,16 @@ const TestimonialsSection = () => {
       testimonial: "This product changed my life!",
       name: "Jane Doe",
     },
+    {
+      avatar: "https://i.imgur.com/nnpmPWM.jpg",
+      testimonial: "This product changed my life!",
+      name: "Jane Doe",
+    },
+    {
+      avatar: "https://i.imgur.com/bPjm5Xt.jpg",
+      testimonial: "This product changed my life!",
+      name: "Jane Doe",
+    },
     // ... more testimonials
   ];
 

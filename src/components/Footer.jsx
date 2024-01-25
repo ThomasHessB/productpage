@@ -10,8 +10,9 @@ const Footer = () => {
       <aside>
         <motion.img
           className="size-16"
-          src="public/thomas-logo.svg"
+          src="https://www.dropbox.com/scl/fi/jlfzvvurc7kmhnw7e95x9/thomas-logo.svg?rlkey=br137ioapuw9zuuf08d6q7jti&raw=1"
           whileHover={{ scale: 1.13, transition: { duration: 0.3 } }}
+          transition={{ type: "spring", stiffness: 400, damping: 10 }}
           whileTap={{ scale: 0.9 }}
         />
         <p className="font-bold">
