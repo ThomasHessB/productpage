@@ -33,17 +33,17 @@ const CTASection = () => {
       {/* Content Container */}
       <div className="text-center relative z-10">
         <motion.h2
-          initial={{ y: -10, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ duration: 0.6 }}
+          whileHover={{ scale: 0.9, transition: { duration: 0.3 } }}
+          transition={{ type: "spring", stiffness: 400, damping: 10 }}
+          whileTap={{ scale: 1.05 }}
           className="text-3xl md:text-4xl font-bold"
         >
           Ready to Make a Change?
         </motion.h2>
         <motion.p
-          initial={{ y: 10, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ duration: 0.6, delay: 0.3 }}
+          whileHover={{ scale: 0.9, transition: { duration: 0.3 } }}
+          transition={{ type: "spring", stiffness: 400, damping: 10 }}
+          whileTap={{ scale: 1.05 }}
           className="text-md md:text-lg mt-2"
         >
           Join us now and transform your experience!
