@@ -17,7 +17,7 @@ const MainSection = () => {
       transition={{ duration: 0.5 }}
     >
       <motion.img
-        src="/public/camera.jpg"
+        src="/camera.jpg"
         initial={{ scale: 0.7 }}
         animate={{ scale: 1 }}
         transition={{ duration: 1.0 }}
