@@ -46,7 +46,7 @@ const CTASection = () => {
           whileTap={{ scale: 1.05 }}
           className="text-md md:text-lg mt-2"
         >
-          Join us now and transform your experience!
+          Join us now and transform your and others experience!
         </motion.p>
         <nav className="hidden md:block">
           {/* Desktop Navigation Links */}
