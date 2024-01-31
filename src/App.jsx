@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Header from "./components/Header";
+
 import MainSection from "./components/MainSection";
 import FeaturesSection from "./components/FeaturesSection";
 import TestimonialsSection from "./components/TestimonialsSection";

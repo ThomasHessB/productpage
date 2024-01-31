@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
+import Spline from "@splinetool/react-spline";
 
 const MainSection = () => {
   const [imageLoaded, setImageLoaded] = useState(false);
@@ -16,14 +17,14 @@ const MainSection = () => {
       transition={{ duration: 0.5 }}
     >
       <motion.img
-        src="https://i.imgur.com/RxalQmM.jpg?1"
+        src="/public/camera.jpg"
         initial={{ scale: 0.7 }}
         animate={{ scale: 1 }}
         transition={{ duration: 1.0 }}
         whileHover={{ scale: 1.07 }}
         whileTap={{ scale: 0.9 }}
         alt="Product Image"
-        className="mx-auto w=1024px"
+        className="mx-auto w=800px h=800px "
         onLoad={handleImageLoaded}
       />
 
@@ -35,7 +36,7 @@ const MainSection = () => {
         whileHover={{ scale: 1.08 }}
         className="text-3xl md:text-5xl font-bold mt-5"
       >
-        Monkey Leash
+        Camera
       </motion.h1>
 
       {/* Animated Paragraph */}
@@ -46,7 +47,7 @@ const MainSection = () => {
         whileHover={{ scale: 1.08 }}
         className="text-gray-600 text-sm md:text-base mt-3"
       >
-        The best leash to control your personal monkey.
+        The best camera to control your personal and comercial life.
       </motion.p>
     </motion.section>
   );
